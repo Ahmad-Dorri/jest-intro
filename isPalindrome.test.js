@@ -1,5 +1,10 @@
-const isPalindrome = require('./isPalindrome');
+import { expect, test } from 'vitest';
+import { isPalindrome } from './isPalindrome';
 
-test('reverse word for aha should return true', () => {
-  expect(isPalindrome('aha').toBe(true));
+test('returns true for mamam', () => {
+  expect(isPalindrome('mamam')).toBe(true);
+});
+
+test('return false for ahmad', () => {
+  expect(isPalindrome('ahmad')).toBe(false);
 });
